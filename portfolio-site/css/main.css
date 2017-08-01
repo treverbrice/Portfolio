@@ -1,0 +1,110 @@
+* {
+  font-family: Arial, Helvetica, sans-serif, monospace;
+  color: #2d3c49;
+}
+
+header {
+  width: 100%;
+  border-bottom: 5px solid #7d97ad;
+  height: 150px;
+  max-height: 15%;
+  position: fixed;
+  background-color: white;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.logo {
+  max-height: 90%;
+  float: left;
+  max-width: 30%;
+}
+
+#name_banner {
+  font-variant: small-caps;
+  float: right;
+  margin: 1% 20px auto 0px;
+  max-width: 60%;
+}
+
+#job_title {
+  font-variant: small-caps;
+  float: right;
+  clear: right;
+  margin-right: 20px;
+  max-width: 60%;
+}
+
+@media screen and (max-height: 580px), screen and (max-height: 740px) and (max-width: 369px){
+  #job_title {opacity: 0;}
+}
+
+section {
+  text-align: center;
+}
+
+#center_img {
+  margin-top: 130px;
+  width: 100%;
+}
+
+figcaption {
+  text-align: right;
+  position: relative;
+  bottom: 1em;
+  background-color: black;
+  color: #ddd;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+#work_title {
+  text-transform: uppercase;
+  text-align: left;
+  color: #555;
+  display: block;
+  width: 100%;
+}
+
+article {
+  float: left;
+  overflow: hidden;
+  width: 32%;
+  min-width: 300px;
+  box-shadow: 3px 3px 14px -2px #666;
+  padding: 2% 0%;
+  margin: 0% 0.5%;
+  flex-grow: 1;
+}
+
+/*@media screen and (max-width: 900px) and (min-width: 601px){
+  article {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  article {
+    width: 99%
+  }
+}*/
+
+a {
+  text-decoration: none;
+  color: #2d3c49;
+}
+
+.example_figure {
+  height: 250px;
+  overflow: hidden;
+}
+
+.example_img {
+  width: 300px;
+  max-width: 100%;
+}
